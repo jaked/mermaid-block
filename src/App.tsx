@@ -22,7 +22,7 @@ function App() {
 
   useEffect(() => {
     const onUpdateMetadata = (event: MessageEvent) => {
-      const originRegex = new RegExp(/^https:\/\/\d{1,4}-\d{1,4}-\d{1,4}-sandpack.codesandbox.io$/)
+      const originRegex = new RegExp(/^https:\/\/\d{1,4}-\d{1,4}-\d{1,4}-sandpack\.codesandbox\.io$/)
       if (!originRegex.test(origin) && origin !== window.location.origin) return;
       if (event.data.codesandbox) return;
       if (event.data.type !== "update-metadata") return;
@@ -35,13 +35,6 @@ function App() {
       window.removeEventListener("message", onUpdateMetadata as EventListener);
     };
   }, [metadataKey]);
-
-  const onUpdateMetadata = (newMetadata: any) => {
-    return new Promise<void>((resolve) => {
-      setMetadata(newMetadata);
-      resolve();
-    });
-  };
 
   const urlParts = useMemo(() => {
     if (!fileUrl) return null;
@@ -198,7 +191,6 @@ function App() {
           <AppInner
             key={block.entry}
             metadata={metadata}
-            onUpdateMetadata={onUpdateMetadata}
             onReset={() => setFileUrl("")}
             block={block}
             dependencies={pkgJson?.dependencies as Record<string, string>}
