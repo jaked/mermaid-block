@@ -1,3 +1,5 @@
+# Mermaid Block
+
 # GitHub Blocks Template
 
 > 📣 Use this repository as a starter project if you're a GitHub user interested in building your own custom Blocks!
