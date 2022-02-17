@@ -1,5 +1,9 @@
 # Mermaid Block
 
+Renders a file using [Mermaid](https://mermaid-js.github.io/mermaid/).
+
+Find `.mermaid` files [here](https://cs.github.com/?scopeName=All+repos&scope=&q=path%3A%2F%5C.mermaid%24%2F)
+
 # GitHub Blocks Template
 
 > 📣 Use this repository as a starter project if you're a GitHub user interested in building your own custom Blocks!
