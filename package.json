@@ -30,6 +30,17 @@
       "example_path": "https://github.com/facebook/react/blob/main/packages/react-dom/index.js"
     },
     {
+      "type": "file",
+      "id": "mermaid-block",
+      "title": "Mermaid Block",
+      "description": "Render file with Mermaid",
+      "entry": "/src/blocks/mermaid-block/index.tsx",
+      "extensions": [
+        "*"
+      ],
+      "example_path": "https://github.com/sourcegraph/sourcegraph/blob/main/doc/code_intelligence/explanations/diagrams/index-states.mermaid"
+    },
+    {
       "type": "folder",
       "id": "folder-block",
       "title": "Example Folder Block",
@@ -49,6 +60,7 @@
     "@types/lodash.uniqueid": "^4.0.6",
     "git-url-parse": "^11.6.0",
     "lodash.uniqueid": "^4.0.1",
+    "mermaid": "^8.14.0",
     "parse-static-imports": "^1.1.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
@@ -57,6 +69,7 @@
   },
   "devDependencies": {
     "@types/git-url-parse": "^9.0.1",
+    "@types/mermaid": "^8.2.7",
     "@types/parse-github-url": "^1.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
