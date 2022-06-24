@@ -20,5 +20,11 @@ export default function (props: FileBlockProps) {
     });
   }, [content]);
 
-  return <div id="mermaid" dangerouslySetInnerHTML={{ __html: rendered }} />;
+  return (
+    <div
+      key={content}
+      id="mermaid"
+      dangerouslySetInnerHTML={{ __html: rendered }}
+    />
+  );
 }
