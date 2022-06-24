@@ -12,9 +12,13 @@ export default function (props: FileBlockProps) {
   const ref = React.useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
-    mermaid.mermaidAPI.render("id", content, (rendered) => {
-      ref.current!.innerHTML = rendered;
-    });
+    try {
+      mermaid.mermaidAPI.render("id", content, (rendered) => {
+        ref.current!.innerHTML = rendered;
+      });
+    } catch (error) {
+      ref.current!.innerHTML = String(error);
+    }
   }, [content]);
 
   return <div ref={ref} id="mermaid" />;
