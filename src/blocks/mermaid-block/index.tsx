@@ -16,5 +16,5 @@ export default function (props: FileBlockProps) {
     setRendered(rendered);
   }, [content]);
 
-  return <div dangerouslySetInnerHTML={{ __html: rendered }} />;
+  return <div id="mermaid" dangerouslySetInnerHTML={{ __html: rendered }} />;
 }
