@@ -15,7 +15,7 @@ export default function (props: FileBlockProps) {
   React.useEffect(() => {
     console.log("rendering mermaid", content);
     mermaid.mermaidAPI.render("id", content, (rendered) => {
-      console.log("rendered mermaid");
+      console.log("rendered mermaid", rendered);
       setRendered(rendered);
     });
   }, [content]);
