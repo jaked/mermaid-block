@@ -12,8 +12,9 @@ export default function (props: FileBlockProps) {
   const [rendered, setRendered] = React.useState("");
 
   React.useEffect(() => {
-    const rendered = mermaid.mermaidAPI.render("id", content);
-    setRendered(rendered);
+    mermaid.mermaidAPI.render("id", content, (rendered) =>
+      setRendered(rendered)
+    );
   }, [content]);
 
   return <div id="mermaid" dangerouslySetInnerHTML={{ __html: rendered }} />;
