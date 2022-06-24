@@ -10,11 +10,14 @@ mermaid.mermaidAPI.initialize({ startOnLoad: false });
 export default function (props: FileBlockProps) {
   const { content } = props;
   const [rendered, setRendered] = React.useState("");
+  console.log("rendering mermaid block");
 
   React.useEffect(() => {
-    mermaid.mermaidAPI.render("id", content, (rendered) =>
-      setRendered(rendered)
-    );
+    console.log("rendering mermaid", content);
+    mermaid.mermaidAPI.render("id", content, (rendered) => {
+      console.log("rendered mermaid");
+      setRendered(rendered);
+    });
   }, [content]);
 
   return <div id="mermaid" dangerouslySetInnerHTML={{ __html: rendered }} />;
