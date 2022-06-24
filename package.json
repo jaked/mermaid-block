@@ -20,36 +20,14 @@
   "blocks": [
     {
       "type": "file",
-      "id": "file-block",
-      "title": "Example File Block",
-      "description": "A basic file block",
-      "entry": "/src/blocks/example-file-block/index.tsx",
-      "extensions": [
-        "*"
-      ],
-      "example_path": "https://github.com/facebook/react/blob/main/packages/react-dom/index.js"
-    },
-    {
-      "type": "file",
       "id": "mermaid-block",
       "title": "Mermaid Block",
       "description": "Render file with Mermaid",
       "entry": "/src/blocks/mermaid-block/index.tsx",
       "extensions": [
-        "*"
+        "*.mermaid"
       ],
       "example_path": "https://github.com/sourcegraph/sourcegraph/blob/main/doc/code_intelligence/explanations/diagrams/index-states.mermaid"
-    },
-    {
-      "type": "folder",
-      "id": "folder-block",
-      "title": "Example Folder Block",
-      "description": "A basic folder block",
-      "entry": "/src/blocks/example-folder-block/index.tsx",
-      "extensions": [
-        "*"
-      ],
-      "example_path": "https://github.com/githubocto/flat"
     }
   ],
   "dependencies": {
