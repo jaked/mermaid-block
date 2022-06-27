@@ -1,0 +1,11 @@
+[
+  {
+    "type": "file",
+    "id": "mermaid-block",
+    "title": "Mermaid Block",
+    "description": "Render file with Mermaid",
+    "entry": "/src/blocks/mermaid-block/index.tsx",
+    "matches": ["*.mermaid"],
+    "example_path": "https://github.com/sourcegraph/sourcegraph/blob/main/doc/code_intelligence/explanations/diagrams/index-states.mermaid"
+  }
+]
